@@ -1,0 +1,4 @@
+# Format: filename | description
+# Example:
+# sunset-acrylic.jpg | Acrylic on canvas, 2026
+PXL_20231030_150726304.jpg | An ode to IITK and IIT Delhi, 2023

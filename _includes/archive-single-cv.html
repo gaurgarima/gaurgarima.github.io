@@ -36,7 +36,18 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>{% endif %}
+    {% if post.paperurl or post.preprinturl or post.codeurl or post.toolurl or post.dataseturl or post.slidesurl or post.bibtexurl %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+        {% if post.preprinturl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.preprinturl }}">Preprint</a>{% endif %}
+        {% if post.codeurl %}{% if post.paperurl or post.preprinturl %} | {% endif %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.toolurl %}{% if post.paperurl or post.preprinturl or post.codeurl %} | {% endif %}<a href="{{ post.toolurl }}">Tool</a>{% endif %}
+        {% if post.dataseturl %}{% if post.paperurl or post.preprinturl or post.codeurl or post.toolurl %} | {% endif %}<a href="{{ post.dataseturl }}">Dataset</a>{% endif %}
+        {% if post.slidesurl %}{% if post.paperurl or post.preprinturl or post.codeurl or post.toolurl or post.dataseturl %} | {% endif %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+        {% if post.bibtexurl %}{% if post.paperurl or post.preprinturl or post.codeurl or post.toolurl or post.dataseturl or post.slidesurl %} | {% endif %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+      </p>
+    {% endif %}
     </li>
  </article>
 </div>
