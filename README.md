@@ -15,48 +15,57 @@
 
 See more info at https://academicpages.github.io/
 
-## Running locally
+## Running locally on Ubuntu
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+These steps install the tools needed to preview the site on a fresh Ubuntu machine.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+1. Open Terminal (`Ctrl` + `Alt` + `T`) and install Git, Ruby, Bundler, and the build tools used by Ruby gems:
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+   ```bash
+   sudo apt update
+   sudo apt install git ruby-full ruby-bundler build-essential zlib1g-dev libssl-dev
+   ```
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
+2. Clone this repository and move into its directory:
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+   ```bash
+   git clone https://github.com/gaurgarima/gaurgarima.github.io.git
+   cd gaurgarima.github.io
+   ```
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+   If you already have the repository on this machine, open Terminal in that repository instead.
+
+3. Install the site's Ruby dependencies into the project directory (no `sudo` needed):
+
+   ```bash
+   bundle config set --local path vendor/bundle
+   bundle install
+   ```
+
+   This may take a few minutes the first time.
+
+   If installing the `openssl` gem fails while compiling, install the OpenSSL development headers and retry:
+
+   ```bash
+   sudo apt install libssl-dev
+   bundle install
+   ```
+
+4. Start Jekyll's local preview server:
+
+   ```bash
+   bundle exec jekyll serve --livereload --host 127.0.0.1
+   ```
+
+5. Open [http://localhost:4000](http://localhost:4000) in your browser. Keep the Terminal window open while previewing. Jekyll rebuilds the site when you edit files; press `Ctrl` + `C` in Terminal to stop the server.
+
+Node.js and npm are not needed just to preview the site. They are only needed if you want to rebuild its JavaScript bundle with `npm run build:js`.
 
 ## Using Docker
 
 Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
 
-You can build and execute the container by running the following command in the repository:
+You can build and execute the container by running the following command in the repository (Docker must be installed):
 
 ```bash
 docker compose up
