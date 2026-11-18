@@ -1,14 +1,86 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Miscellaneous"
+permalink: /miscellaneous/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<style>
+.misc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 1rem 0 2rem 0;
+}
+.misc-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.misc-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.15s ease;
+}
+.misc-card a { display: block; }
+.misc-card a:hover img { transform: scale(1.03); }
+.misc-card p {
+  margin: 0;
+  padding: 7px 9px;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  color: #333;
+}
+</style>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+## Hiking
 
+<div class="misc-grid">
+  {% assign hiking_images = site.static_files | where_exp: "f", "f.path contains '/images/misc/hiking/'" %}
+  {% for img in hiking_images %}
+    {% assign ext = img.extname | downcase %}
+    {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" or ext == ".gif" %}
+    {% assign cap = site.data.hiking_captions | where: "filename", img.name | first %}
+    <div class="misc-card">
+      <a href="{{ img.path }}" target="_blank" rel="noopener">
+      <img src="{{ img.path }}" alt="{{ img.name }}">
+      </a>
+      <p>{% if cap and cap.description %}{{ cap.description }}{% else %}{{ img.basename }}{% endif %}</p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+## Paintings
+
+<div class="misc-grid">
+  {% assign painting_images = site.static_files | where_exp: "f", "f.path contains '/images/misc/paintings/'" %}
+  {% for img in painting_images %}
+    {% assign ext = img.extname | downcase %}
+    {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" or ext == ".gif" %}
+    {% assign cap = site.data.painting_captions | where: "filename", img.name | first %}
+    <div class="misc-card">
+      <a href="{{ img.path }}" target="_blank" rel="noopener">
+      <img src="{{ img.path }}" alt="{{ img.name }}">
+      </a>
+      <p>{% if cap and cap.description %}{{ cap.description }}{% else %}{{ img.basename }}{% endif %}</p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+## Poems I Like
+
+<ul>
+  {% for poem in site.data.poem_links %}
+    <li><a href="{{ poem.url }}" target="_blank" rel="noopener">{{ poem.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<p>Edit poem links in <code>_data/poem_links.yml</code>.</p>

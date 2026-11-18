@@ -1,152 +1,202 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Garima Gaur",
+    "email": "garimagaur.27@gmail.com",
+    "phone": "+33 745630213",
+    "website": "https://gaurgarima.github.io",
+    "summary": "Postdoctoral researcher at CEDAR, Inria Saclay. Research interests include graph data management, provenance, data integration, and fact-checking.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "address": "Centre Inria de Saclay, Batiment Alan Turing",
+      "postalCode": "91120",
+      "city": "Palaiseau",
+      "countryCode": "FR",
+      "region": "Ile-de-France"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "thOvLMkAAAAJ",
+        "url": "https://scholar.google.com/citations?user=thOvLMkAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "username": "0000-0002-6708-7310",
+        "url": "http://orcid.org/0000-0002-6708-7310"
       },
       {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "network": "DBLP",
+        "username": "207/9943",
+        "url": "https://dblp.org/pid/207/9943.html"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Inria Saclay",
+      "position": "Postdoctoral Researcher",
+      "website": "https://www.inria.fr",
+      "startDate": "2024-02-01",
+      "endDate": "",
+      "summary": "Postdoctoral researcher in the CEDAR team.",
+      "highlights": []
+    },
+    {
+      "company": "Indian Institute of Technology Delhi",
+      "position": "Postdoctoral Researcher",
+      "website": "https://home.iitd.ac.in",
+      "startDate": "2022-03-01",
+      "endDate": "2023-12-31",
+      "summary": "Postdoctoral researcher hosted by Maya Ramanath.",
+      "highlights": []
+    },
+    {
+      "company": "Indian Institute of Technology Delhi",
+      "position": "Research Scientist",
+      "website": "https://home.iitd.ac.in",
+      "startDate": "2021-01-01",
+      "endDate": "2022-03-01",
+      "summary": "Research scientist in computer science.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "Indian Institute of Technology Kanpur",
+      "area": "Computer Science and Engineering",
+      "studyType": "PhD (with MTech)",
+      "startDate": "2013",
+      "endDate": "2021",
+      "gpa": "8.2/10",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "Madhav Institute of Technology and Science, Gwalior",
+      "area": "Information Technology",
+      "studyType": "BE",
+      "startDate": "2009",
+      "endDate": "2013",
+      "gpa": "8.4/10",
       "courses": []
     }
   ],
   "skills": [],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Research",
+      "keywords": [
+        "Graph data management",
+        "Provenance",
+        "Data integration",
+        "Fact-check retrieval",
+        "Named entity centric data management"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Tracking the Impact of Fact Deletions on Knowledge Graph Queries using Provenance Polynomials",
+      "publisher": "CIKM",
+      "releaseDate": "2017-11-06",
+      "website": "https://doi.org/10.1145/3132847.3133133",
+      "summary": "Short paper"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "How and Why is An Answer (Still) Correct? Maintaining Provenance in Dynamic Knowledge Graphs",
+      "publisher": "CIKM",
+      "releaseDate": "2020-10-19",
+      "website": "https://doi.org/10.1145/3340531.3411958",
+      "summary": "Full paper"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Computing and Maintaining Provenance of Query Result Probabilities in Uncertain Knowledge Graphs",
+      "publisher": "CIKM",
+      "releaseDate": "2021-11-01",
+      "website": "https://doi.org/10.1145/3459637.3482330",
+      "summary": "Full paper"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Teaching Old DB Neu(ral) Tricks: Learning Embeddings on Multi-tabular Databases",
+      "publisher": "CODS-COMAD",
+      "releaseDate": "2023-01-01",
+      "website": "https://dblp.org/rec/conf/comad/GuptaKK23",
+      "summary": "Full paper"
+    },
+    {
+      "name": "NeuSTIP: A Neuro-Symbolic Model for Link and Time Prediction in Temporal Knowledge Graphs",
+      "publisher": "EMNLP",
+      "releaseDate": "2023-12-01",
+      "website": "https://aclanthology.org/2023.emnlp-main.274/",
+      "summary": "Full paper"
+    },
+    {
+      "name": "FactCheckBureau: Build Your Own Fact-Check Analysis Pipeline",
+      "publisher": "CIKM",
+      "releaseDate": "2024-10-21",
+      "website": "https://doi.org/10.1145/3627673.3679220",
+      "summary": "Demo paper. Tool: https://zenodo.org/records/13868429 ; Code: https://gitlab.inria.fr/cedar/factcheckbureau ; Dataset: https://zenodo.org/records/13898319"
+    },
+    {
+      "name": "The Search for Conflicts of Interest: Open Information Extraction in Scientific Publications",
+      "publisher": "Findings of EMNLP",
+      "releaseDate": "2025-01-01",
+      "website": "https://aclanthology.org/2025.findings-emnlp.748/",
+      "summary": "Findings paper"
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "NeuSTIP: A Neuro-Symbolic Model for Link and Time Prediction in Temporal Knowledge Graphs",
+      "event": "EMNLP 2023",
+      "date": "2023-12-01",
+      "location": "Singapore",
+      "description": "Conference presentation"
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "FactCheckBureau: Build Your Own Fact-Check Analysis Pipeline",
+      "event": "CIKM 2024",
+      "date": "2024-10-21",
+      "location": "Boise, Idaho, USA",
+      "description": "Demo presentation"
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "course": "Architecture of Big Data Systems",
+      "institution": "Telecom Paris",
+      "date": "2024-09-01",
+      "role": "Practical Sessions",
+      "description": "Neo4J and data integration practicals"
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Database Management Systems (CSC 52640 EP)",
+      "institution": "Ecole Polytechnique",
+      "date": "2024-09-01",
+      "role": "Instructor",
+      "description": "Lecture and practical sessions"
+    },
+    {
+      "course": "Big Graph Databases (ECE 5DA04 TP)",
+      "institution": "Telecom Paris",
+      "date": "2025-09-01",
+      "role": "Lecture and Practical Session",
+      "description": "Graph DB and integration modules"
+    },
+    {
+      "course": "Database Management Systems (CSC 51053 EP)",
+      "institution": "Ecole Polytechnique",
+      "date": "2025-09-01",
+      "role": "Practical Session",
+      "description": "Lab and evaluation support"
+    },
+    {
+      "course": "Fundamentals of Database Systems (NPTEL)",
+      "institution": "IIT Kanpur",
+      "date": "2017-01-01",
+      "role": "Teaching Assistant",
+      "description": "MOOC assignment design and evaluation"
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }
