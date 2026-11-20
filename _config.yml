@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Garima Gaur"
 title_separator          : "-"
 name                     : &name "Garima Gaur"
-description              : &description "Postdoctoral researcher at CEDAR (Inria Saclay) working on AI for data management, knowledge graphs, provenance, and fact-checking."
+description              : &description "Maîtresse de conférences (Assistant Professor) at Télécom SudParis, working on AI for data management, knowledge graphs, provenance, and fact-checking."
 url                      : https://gaurgarima.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -22,12 +22,13 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "garima-profile.jpg"
+  avatar           : "garima-profile-1.jpg"
   name             : "Garima Gaur"
+  position         : "Maîtresse de conférences (Assistant Professor)"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral researcher at CEDAR, Inria Saclay. Research: AI for data management, graph data management, provenance, and fact-checking."
-  location         : "Palaiseau, France"
-  employer         : "Inria Saclay"
+  bio              : "Maîtresse de conférences (Assistant Professor) at Télécom SudParis. Research: AI for data management, graph data management, provenance, and fact-checking."
+  location         :
+  employer         : "Télécom SudParis"
   uri              : # URL
   email            : "garimagaur.27@gmail.com" 
 

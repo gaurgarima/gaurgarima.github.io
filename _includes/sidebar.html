@@ -1,25 +1,30 @@
 {% include base_path %}
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
-  {% endif %}
+<aside class="sidebar profile-panel" aria-label="Profile and academic links">
+  <div class="profile-panel__identity">
+    <a class="profile-panel__home" href="{{ base_path }}/" aria-label="{{ site.author.name }} home">
+      <img
+        class="profile-panel__portrait"
+        src="{{ site.author.avatar | prepend: '/images/' | relative_url }}"
+        alt="Portrait of {{ site.author.name | escape }}">
+    </a>
+    <div class="profile-panel__details">
+      <a class="profile-panel__home" href="{{ base_path }}/">
+        <span class="profile-panel__name">{{ site.author.name }}</span>
+      </a>
+      <p class="profile-panel__position">{{ site.author.position }}</p>
+      <p class="profile-panel__affiliation">{{ site.author.employer }}</p>
+    </div>
   </div>
-{% endif %}
+
+  <nav class="profile-panel__links" aria-label="Academic profiles">
+    <ul>
+      {% if site.author.googlescholar %}
+        <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+      {% endif %}
+      {% if site.author.dblp %}
+        <li><a href="{{ site.author.dblp }}">DBLP</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+</aside>

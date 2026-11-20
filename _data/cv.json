@@ -4,7 +4,7 @@
     "email": "garimagaur.27@gmail.com",
     "phone": "+33 745630213",
     "website": "https://gaurgarima.github.io",
-    "summary": "Postdoctoral researcher at CEDAR, Inria Saclay. Research interests include graph data management, provenance, data integration, and fact-checking.",
+    "summary": "Maîtresse de conférences (Assistant Professor) at Télécom SudParis. Research interests include graph data management, provenance, data integration, and fact-checking.",
     "location": {
       "address": "Centre Inria de Saclay, Batiment Alan Turing",
       "postalCode": "91120",
@@ -32,11 +32,19 @@
   },
   "work": [
     {
+      "company": "Télécom SudParis",
+      "position": "Maîtresse de conférences (Assistant Professor)",
+      "startDate": "2026",
+      "endDate": "",
+      "summary": "Faculty member working on AI for data management.",
+      "highlights": []
+    },
+    {
       "company": "Inria Saclay",
       "position": "Postdoctoral Researcher",
       "website": "https://www.inria.fr",
       "startDate": "2024-02-01",
-      "endDate": "",
+      "endDate": "2026",
       "summary": "Postdoctoral researcher in the CEDAR team.",
       "highlights": []
     },

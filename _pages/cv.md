@@ -14,9 +14,10 @@ Education
 * PhD (with MTech), Computer Science and Engineering, IIT Kanpur, 2021
 * BE, Information Technology, Madhav Institute of Technology and Science, Gwalior, 2013
 
-Research Positions
+Professional Experience
 ======
-* Since Feb 2024: Postdoctoral Researcher, CEDAR team, Inria Saclay
+* 2026–present: Maîtresse de conférences (Assistant Professor), Télécom SudParis
+* Feb 2024–2026: Postdoctoral Researcher, CEDAR team, Inria Saclay
 * Mar 2022 to Dec 2023: Postdoctoral Researcher, IIT Delhi
 * Jan 2021 to Mar 2022: Research Scientist, IIT Delhi
 * 2016: Summer Intern, IBM Research Delhi
